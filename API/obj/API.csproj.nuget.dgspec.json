@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dream_Project\\Restore\\api\\API.csproj": {}
+    "C:\\Dream_Project\\Restore\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Dream_Project\\Restore\\api\\API.csproj": {
+    "C:\\Dream_Project\\Restore\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dream_Project\\Restore\\api\\API.csproj",
+        "projectUniqueName": "C:\\Dream_Project\\Restore\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Dream_Project\\Restore\\api\\API.csproj",
+        "projectPath": "C:\\Dream_Project\\Restore\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Anonymous\\.nuget\\packages\\",
-        "outputPath": "C:\\Dream_Project\\Restore\\api\\obj\\",
+        "outputPath": "C:\\Dream_Project\\Restore\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
