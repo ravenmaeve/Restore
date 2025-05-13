@@ -1,4 +1,5 @@
 using API.Data;
+using API.Middleware;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,11 +14,18 @@ builder.Services.AddDbContext<StoreContext>(options =>{
 //fixed CORS issue
 builder.Services.AddCors();
 
+//for Expception Middleware
+builder.Services.AddTransient<ExceptionMiddleware>();
+//builder.Services.AddScoped<IMiddleware>()
+
 /**************************************/
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 // builder.Services.AddOpenApi();
 /**************************************/
 var app = builder.Build();
+
+//for Exception Handling
+app.UseMiddleware<ExceptionMiddleware>();
 
 // Configure the HTTP request pipeline.
 /**************************************/
@@ -31,6 +39,7 @@ var app = builder.Build();
 // app.UseAuthorization();
 /**************************************/
 
+//for allowing client's access
 app.UseCors(opt =>{
     opt.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:3000");
 });
