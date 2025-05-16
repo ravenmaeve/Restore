@@ -4,7 +4,8 @@ import { toast } from "react-toastify";
 import { router } from "../routes/Routes";
 
 const customBaseQuery = fetchBaseQuery({
-    baseUrl: 'https://localhost:7189/api'
+    baseUrl: 'https://localhost:7189/api',
+    credentials: `include`
 })
 
 const sleep = () => new Promise(resolve => setTimeout(resolve,1000));
